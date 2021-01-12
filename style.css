@@ -1,0 +1,532 @@
+html,
+body {
+  background: rgb(242, 246, 255) !important;
+  
+}
+
+
+
+/*modo oscuro codigos*/
+html,
+body.dark{
+  background: #00001b !important;
+  height: 100%;
+
+}
+body.dark .wrapperr {
+  background: #00001b;
+}
+
+body.dark .profile-bg {
+  box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.77);
+}
+body.dark h1.first-blog {
+  background: #00001b;
+  border: 3px solid #00001b;
+}
+
+body.dark p{
+  color: #a0a0a0;
+}
+
+body.dark h2{
+  color: #a0a0a0;
+}
+
+body.dark .nav-link {
+  color: #a0a0a0;
+}
+
+body.dark .titulo{
+    color:#332fb0;
+}
+
+
+
+
+/*boton switch*/
+
+/*boton switch para modo oscuro y claro de website*/
+.switch {
+  background: #343D5B;
+  border-radius: 1px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+
+
+
+.switch .fas{
+  color: white;
+}
+
+/*ocuata el color que se da al momento de hacer clikc en el icono*/
+.switch:focus{
+  outline: none;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 32px;
+  position: absolute;
+  background: #F1F1F1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 1px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/*cambia el color del fondo del icono noche e dia*/
+.switch.active {
+  background: rgb(51 47 176);
+  color: #000;
+}
+
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: rgb(27, 27, 27);
+}
+
+
+
+.button-dark-with{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+/*botones*/
+.btn {
+  border-radius: 2px;
+}
+
+/*header---------------------------------------------------------------------*/
+.contenedor-texto{
+  height: 100vh;
+  padding: 250px 0;
+  z-index: 1;
+ 
+    
+}
+
+
+.titulo {
+  
+  font-size: 50px;
+  font-weight: bold;
+  color: #332fb0;
+  padding: 60px 0 0;
+  height: 107px;
+     
+}
+
+.titulo {
+  background-color: #ffffff00;
+display: block;
+width: 100%;
+min-height: 100px;
+border: 3px solid #fff0;
+box-shadow: 10px -10px 0 -3px rgba(255, 255, 255, 0), 10px -10px #332fb0;
+transition: 1s, top 1s, left 1s;
+position: relative;
+top: 0;
+left: 0;
+cursor: pointer;
+}
+
+.titulo:hover {
+  top: -10px;
+  left: 10px;
+  box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+}
+
+
+
+
+
+.titulo p {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.titulo h2 {
+  font-size: 14px;
+}
+
+
+
+
+.typed i{
+  font-size: 15px;
+  color: #474747;
+  font-weight: bold;
+  padding: 10px 0 ;
+  height: 100px;
+}
+.typed-cursor{
+  color: #474747;
+}
+/*header---------------------------------------------------------------------*/
+
+
+
+/*perfil---------------------------------------------------------------------*/
+.profile {
+  animation: loadProfile 0.6s ease-in-out;
+  animation-fill-mode: both;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 750px;
+  max-width: 900px;
+  
+}
+
+.profile-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  box-shadow: 0 30px 50px -20px rgba(14, 0, 47, 0.21);
+  width: calc(100% - 75px);
+  height: calc(100% - 110px);
+  
+
+
+  
+
+}
+
+
+
+
+
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+} 
+
+.profile-image {
+  animation: loadProfileImage 1s ease-in-out 0.5s;
+  animation-fill-mode: both;
+  position: relative;
+  border-radius: 5px;
+  width: 35%;
+  flex: none;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+
+.profile-info {
+  margin-top: 120px;
+  padding: 8% 8% 2% 8%;
+  position: relative;
+}
+
+.profile-info h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0.7rem;
+  position: absolute;
+  animation-fill-mode: both;
+}
+
+h1.first-name {
+  top: -115px;
+left: -85px;
+background: #cec9c900;
+padding: 19px 0 0;
+height: 58px;
+color: #332FB0;
+font-size: 50px;
+font-weight: bold;
+border: 3px solid #0d0d0d00;
+box-shadow: 10px -10px 0 -3px #53424200, 10px -10px #332FB0;
+} 
+
+h1.second-name {
+  animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
+  top: -50px;
+  left: -45px;
+}
+
+.profile-info h2 {
+  font-size: 13px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 10px;
+color: rgb(97, 97, 97);
+font-weight: bold;
+}
+
+.social-media-icons a,
+.profile-info h2 {
+  color: #474747;
+}
+
+.profile-info p {
+  line-height: 1.3rem;
+  color: #474747;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-media-icons a {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  flex: auto;
+  text-align: center;
+}
+
+.camera,
+.social-media-icons a {
+  transition: text-shadow 0.5s ease;
+}
+
+.camera:hover,
+.social-media-icons a:hover {
+  color: #332fb0;
+}
+
+
+
+.icon {
+  background: transparent no-repeat center;
+  background-size: contain;
+  background-origin: content-box;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border: none;
+  transition: transform 0.5s ease;
+}
+
+.icon:hover {
+  transform: scale(0.9);
+}
+
+
+
+/*perfil---------------------------------------------------------------------*/
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .contenedor-texto{
+    height: 100vh;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 90%;
+    margin: auto;
+}
+   
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+/*perfil---------------------------------------------------------------------*/
+
+  .profile {
+    margin: 3%;
+    height: 97%;
+  }
+  .contenedor {
+    height: 86%;
+    flex-direction: column;
+  }
+  .profile-image {
+    height: 40%;
+    width: calc(100% - 90px);
+  }
+  .profile-bg {
+    width: 100%;
+  }
+  h1.first-name {
+    left: 10px;
+  }
+  h1.second-name {
+    left: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+/*Blog*/
+.blog-scpace {
+  padding: 100px 0;
+  margin: 0 17px;
+}
+
+h1.first-blog {
+  
+  background: #f2f6ff;
+padding: 19px 0 0;
+height: 58px;
+color: #332fb0;
+font-size: 50px;
+font-weight: bold;
+border: 3px solid #f2f6ff;
+box-shadow: 10px -10px 0 -3px #332fb0, 10px -10px #332FB0;
+width: 113px;
+}
+
+.img-card {
+  width: 100%;
+  height:220px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 200px;
+  object-fit:cover; 
+  transition: all .25s ease;
+} 
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+  .contenedor-texto{
+    height: 100vh;
+    padding: 300px 0;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 90%;
+    margin: auto;
+}
+   
+}
+
+
+
+
+
+@media only screen and (max-width: 411px) {
+  .contenedor-texto{
+    height: 100vh;
+    padding: 330px 0;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 90%;
+    margin: auto;
+}
+   
+}
+
+
+@media only screen and (max-width: 375px) {
+  .contenedor-texto{
+    height: 100vh;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 90%;
+    margin: auto;
+}
+   
+}
+
+
+
+
+
+@media only screen and (max-width: 360px) {
+  .contenedor-texto{
+    height: 100vh;
+    padding: 230px 0;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 90%;
+    margin: auto;
+}
+   
+}
+
+
+@media only screen and (max-width: 320px) {
+  .contenedor-texto{
+    height: 100vh;
+    padding: 220px 0;
+      
+  }
+
+  .blog-scpace {
+    padding: 100px 0;
+    width: 89%;
+    margin: auto;
+}
+   
+}
+
+
+
+.fondo-black {
+  background: rgb(242, 246, 255);
+}
+
+
+
